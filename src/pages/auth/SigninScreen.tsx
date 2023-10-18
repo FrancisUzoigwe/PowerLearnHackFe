@@ -22,7 +22,7 @@ const Reg = () => {
     resolver: yupResolver(Schema),
   });
 
-  const onHandleSubmit = handleSubmit(async () => {});
+  const onHandleSubmit = handleSubmit(async () => { });
 
   return (
     <div>
