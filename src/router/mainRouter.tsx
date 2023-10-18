@@ -5,6 +5,8 @@ import RegisterScreen from "../pages/auth/RegisterScreen";
 import SigninScreen from "../pages/auth/SigninScreen";
 import Layout from "../components/common/Layout";
 import HomeScreen from "../pages/home/HomeScreen";
+import MailScreen from "../pages/auth/MailScreen"
+import Sign from "../pages/auth/Sign";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -22,8 +24,12 @@ export const mainRouter = createBrowserRouter([
     element: <RegisterScreen />,
   },
   {
-    path: "/sign-in",
-    element: <SigninScreen />,
+    path: "/mail",
+    element: <MailScreen />,
+  },
+  {
+    path: "/signin",
+    element: <Sign />,
   },
   {
     path: "/home",

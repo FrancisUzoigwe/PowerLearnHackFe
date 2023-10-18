@@ -61,7 +61,7 @@ const LandingScreen = () => {
           <img
             src=""
             alt="Environment"
-            className="w-full h-full rounded-full object-cover bg-red-300"
+            className="w-full h-full rounded-full object-cover bg-green-400"
           />
         </div>
       </div>

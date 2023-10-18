@@ -41,11 +41,13 @@ const FirstHeader = () => {
                 </Link>
               </div>
             </div>
+            <Link to="/register">
             <div className="max-sm:hidden ml-2">
               <button className="px-[24px] py-2 rounded-tl-[20px] rounded-br-[20px] bg-[#69BA00] text-white outline-none font-bold">
                 Get Started
               </button>
             </div>
+            </Link>
             <div className="max-sm:flex hidden">
               <FiMenu className="text-3xl hover:cursor-pointer hover:scale-125 duration-300" />
             </div>

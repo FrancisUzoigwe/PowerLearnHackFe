@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SigninScreen from "./SigninScreen";
 import Reg from "./Reg";
+import SigninScreen from "./SigninScreen"
 
-const RegisterScreen = () => {
+const Sign = () => {
   const [toggle, setToggle] = useState<boolean>(false);
   const [toggle1, setToggle1] = useState<boolean>(false);
 
@@ -53,7 +53,7 @@ const RegisterScreen = () => {
                 </div>
               </div>
             </div>
-            {toggle ? <SigninScreen /> : <Reg />}
+            {toggle ? <Reg /> : <SigninScreen />}
           </div>
         </div>
       </div>
@@ -61,4 +61,4 @@ const RegisterScreen = () => {
   );
 };
 
-export default RegisterScreen;
+export default Sign;
