@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { RiRecycleFill } from "react-icons/ri";
 
 const FirstHeader = () => {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -20,7 +21,9 @@ const FirstHeader = () => {
         <div className="w-[95%]  h-full flex justify-center items-center">
           <div className="flex justify-between items-center w-full">
             <div className="flex w-[auto]  justify-between items-center">
-              <div className="mr-20">Logo</div>
+              <div className="mr-20">
+                <RiRecycleFill className="text-4xl"/>
+              </div>
               <div className="flex max-md:hidden mx-2">
                 <Link to="/mission">
                   <div className="mx-5 font-bold text-gray-500">
