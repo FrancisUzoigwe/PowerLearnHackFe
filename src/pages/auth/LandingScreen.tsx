@@ -25,7 +25,7 @@ const LandingScreen = () => {
             </div>
             <div className="flex items-center">
               <div className="mt-6  flex items-center">
-                <button className="px-16 py-2 rounded-tl-[20px] max-md:px-11 rounded-br-[20px] bg-[#69BA00] text-white outline-none font-bold mr-5">
+                <button className="px-16 py-3 rounded-tl-[25px] max-md:px-11 rounded-br-[25px] bg-[#69BA00] text-white outline-none font-bold mr-5">
                   Read More
                 </button>
                 <div className="min-w-[45px] min-h-[45px] rounded-full bg-[#69BA00] flex items-center justify-center">
@@ -44,7 +44,7 @@ const LandingScreen = () => {
                     tempora, impedit, similique maiores perferendis temporibus!
                   </div>
                 </div>
-                <div className="mx-2 mt-2">
+                <div className="mx-2 mt-2 max-md:mt-5">
                   <div className="font-extrabold my-1">Our Story</div>
                   <div className="text-[14px]">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
