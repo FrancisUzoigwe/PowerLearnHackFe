@@ -9,6 +9,7 @@ const FirstLayout = () => {
       <div className="mt-10">
         <Outlet />
       </div>
+      <Footer/>
 
     </div>
   );

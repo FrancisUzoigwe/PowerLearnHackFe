@@ -5,22 +5,17 @@ import { HiOutlineCalendar } from "react-icons/hi";
 import { LiaFacebookMessenger } from "react-icons/lia";
 import { CgLogOut } from "react-icons/cg";
 import { useSelector } from "react-redux";
-
 const Sider = () => {
-  const User = useSelector((state: any) => state.user);
   const toggle = useSelector((state: any) => state.toggle);
-  console.log(User)
   return (
-    <div className="small:hidden">
-            {toggle ? (
+    <div className="max-sm:hidden">
+      {toggle ? (
         <div className="h-[100vh] w-[65px] fixed bg-green-400 text-white pt-[10px]">
-          <div
-            className=" flex flex-col w-full h-[90px] hover:bg-[#f9bf548a] hover:text-[black] items-center justify-between px-[5px] hover:cursor-pointer transition-all duration-300 hover:rounded-md">
-            <div
-              className=" my-[5px] h-[40px] w-[40px] flex items-center justify-center rounded bg-[white]">
-              <img  alt="" className="w-[35px] " />
+          <div className=" flex flex-col w-full h-[90px] hover:bg-[#f9bf548a] hover:text-[black] items-center justify-between px-[5px] hover:cursor-pointer transition-all duration-300 hover:rounded-md">
+            <div className=" my-[5px] h-[40px] w-[40px] flex items-center justify-center rounded bg-[white]">
+              <img alt="" className="w-[35px] " />
             </div>
-              <HiChevronDoubleRight/>
+            <HiChevronDoubleRight />
           </div>
 
           <div
@@ -69,7 +64,6 @@ const Sider = () => {
               <CgLogOut className="text-[25px]" />
             </div>
           </div>
-      
         </div>
       ) : (
         <div className="h-[100vh] w-[200px] md:w-[150px] fixed bg-green-400 text-white pt-[10px]">
@@ -101,16 +95,16 @@ const Sider = () => {
           bg-[white] 
           ml-[10px]"
             >
-              <img  alt="" className="w-[35px] " />
+              <img alt="" className="w-[35px] " />
             </div>
             <div className="text-[20px]">Astra</div>
-              <HiChevronDoubleLeft/>
+            <HiChevronDoubleLeft />
           </div>
 
           <div
             className="flex w-full
       h-[50px]
-      hover:bg-[#f9bf548a] hover:text-[black] hover:cursor-pointer transition-all duration-300  pl-[20px] mt-[40px] items-center hover:rounded-md " 
+      hover:bg-[#f9bf548a] hover:text-[black] hover:cursor-pointer transition-all duration-300  pl-[20px] mt-[40px] items-center hover:rounded-md "
           >
             <LuLayoutDashboard className="text-[23px]" />
             <p className="ml-[15px] md:text-[14px]">Dashboard</p>
@@ -151,17 +145,17 @@ const Sider = () => {
             <div
               className="h-[50px] flex items-center justify-center mb-[0px] w-[40px] rounded
               [50px]
-               hover:text-[black] hover:cursor-pointer transition-all duration-300">
+               hover:text-[black] hover:cursor-pointer transition-all duration-300"
+            >
               <CgLogOut className="text-[25px]" />
             </div>
             <span className="ml-[15px]">Log out</span>
           </div>
           <hr />
- 
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Sider
+export default Sider;

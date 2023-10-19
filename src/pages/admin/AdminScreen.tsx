@@ -2,7 +2,7 @@ import AdminHeader from "./AdminHeader"
 
 const AdminScreen = () => {
   return (
-    <div className="className=w-[95%] md:w-[90%] h-[100%] small:w-[95%]">
+    <div className="className=w-[95%] md:w-[90%] h-[auto] max-sm:w-[95%]">
       <AdminHeader/>
      {/* Hold */}  
      <br/>
