@@ -8,8 +8,8 @@ const FirstLayout = () => {
       <FirstHeader />
       <div className="mt-10">
         <Outlet />
+        <Footer/>
       </div>
-      <Footer/>
 
     </div>
   );

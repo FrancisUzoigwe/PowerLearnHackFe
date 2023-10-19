@@ -23,6 +23,7 @@ export const mainRouter = createBrowserRouter([
       },
     ],
   },
+  
   {
     path: "/register",
     element: <RegisterScreen />,
