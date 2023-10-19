@@ -2,8 +2,12 @@ import { useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { createUser } from "../../apis/authApi";
+import { useNavigate } from "react-router-dom";
 
 const Reg = () => {
+  const navigate = useNavigate()
+
   const [checked, setChecked] = useState<boolean>(false);
 
   const Schema = yup.object({
@@ -21,7 +25,15 @@ const Reg = () => {
     resolver: yupResolver(Schema),
   });
 
-  const onHandleSubmit = handleSubmit(async () => {});
+  const onHandleSubmit = handleSubmit(async (data:any) => {
+    const {email,password,name} = data
+    console.log(data)
+    createUser({email,password,name}).then((res:any)=>{
+  
+      navigate( "/signin")
+     return res.data
+    })
+  });
 
   return (
     <div>
@@ -68,7 +80,7 @@ const Reg = () => {
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">
             <input
-              type="text"
+              type="password"
               placeholder="JohnDoe123"
               className="w-full h-full outline-none  pl-5 placeholder:text-[13px] text-[13px]"
               {...register("password")}
