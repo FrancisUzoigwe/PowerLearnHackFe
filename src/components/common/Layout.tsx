@@ -7,7 +7,6 @@ const Layout = () => {
       <Header />
       <div className="mt-[60px]">
         <Outlet />
-        {/* <Footer/> */}
       </div>
     </div>
   );

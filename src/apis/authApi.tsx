@@ -22,3 +22,13 @@ try {
     console.log(error)
 }
 }
+
+export const allUsers = async()=>{
+try {
+    return await axios.get(`${url}/api/get-all`,).then((res:any)=>{
+        return res.data.data
+    })
+} catch (error) {
+    console.log(error)
+}
+}

@@ -7,6 +7,7 @@ import { CgLogOut } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
 import { changeToggleFalse, changeToggleTrue } from "../../global/globalState";
 
+
 const Sider = () => {
   const dispatch = useDispatch();
   const toggle = useSelector((state: any) => state.toggle);

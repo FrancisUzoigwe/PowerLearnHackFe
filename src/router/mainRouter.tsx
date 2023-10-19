@@ -23,6 +23,7 @@ export const mainRouter = createBrowserRouter([
       },
     ],
   },
+
   {
     path: "/register",
     element: <RegisterScreen />,
@@ -48,7 +49,7 @@ export const mainRouter = createBrowserRouter([
   {
     path: "/home",
     element: (
-      // <PrivateRoute>
+      <PrivateRoute>
       <Layout />
       // </PrivateRoute>
     ),
