@@ -4,7 +4,7 @@ import vite from "../../assets/react.svg";
 const LandingScreen = () => {
   return (
     <div className="w-full h-[auto] flex justify-center">
-      <div className="mt-16 w-[95%] h-full flex max-sm:flex-col">
+      <div className="mt-7 w-[95%] h-full flex max-sm:flex-col">
         <div className="h-full w-[50%] md:w-[70%] max-sm:w-[100%] flex flex-col justify-center">
           <div className="w-full max-md:flex max-md:flex-col max-md:items-center ">
             <div className="h-[290px] w-[100%]   border mt-2  max-sm:flex hidden ">

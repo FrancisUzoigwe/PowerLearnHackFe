@@ -1,8 +1,37 @@
+import { useState } from "react";
+import { MdLogout } from "react-icons/md";
+import { RiRecycleFill } from "react-icons/ri";
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  const [scroll, setScroll] = useState<boolean>(false);
+  const onScroll = () => {
+    setScroll(!scroll);
+    if (window.scrollY >= 13) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener("scroll", onScroll);
 
-export default Header
+  return (
+    <div>
+      <div className="w-full py-3 flex items-center justify-center fixed bg-white">
+        <div className="w-[95%]  h-full flex justify-center items-center">
+          <div className="flex justify-between items-center w-full">
+            <div className="flex w-[auto]  justify-between items-center">
+              <div className="mr-20">
+                <RiRecycleFill className="text-4xl" />
+              </div>
+            </div>
+            <div>
+              <MdLogout className="text-3xl  hover:scale-125 duration-300 transition-all cursor-pointer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;

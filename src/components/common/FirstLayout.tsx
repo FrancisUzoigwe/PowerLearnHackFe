@@ -3,9 +3,11 @@ import FirstHeader from "../static/FirstHeader";
 
 const FirstLayout = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <FirstHeader />
-      <Outlet />
+      <div className="mt-10">
+        <Outlet />
+      </div>
     </div>
   );
 };
