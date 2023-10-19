@@ -2,9 +2,12 @@ import { useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { SigninUser } from "../../apis/authApi";
+import { useNavigate } from "react-router-dom";
 
 const Reg = () => {
   // console.log(state);
+const navigate =useNavigate()
 
   const [checked, setChecked] = useState<boolean>(false);
 
@@ -22,7 +25,15 @@ const Reg = () => {
     resolver: yupResolver(Schema),
   });
 
-  const onHandleSubmit = handleSubmit(async () => {  });
+  const onHandleSubmit = handleSubmit(async (data:any) => { 
+    const {email,password}= data
+    console.log(data);
+    
+  SigninUser({email,password}).then((res:any)=>{
+    navigate("/home")
+    return res.data
+  })
+   });
 
   return (
     <div>
