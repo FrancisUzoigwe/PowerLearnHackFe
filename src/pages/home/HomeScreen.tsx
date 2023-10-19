@@ -13,8 +13,8 @@ const HomeScreen = () => {
         <div className="w-full h-[340px]  flex justify-between ">
           <div className="flex flex-col h-[300px]">
             <div className="text-2xl mt-7">
-              Welcome <span className="font-bold">Francis</span>, you have
-              brought 0 bags
+              Welcome <span className="font-bold">Francis</span>, you've
+              brought 10 bags
             </div>
             <div className="flex mt-5 flex-wrap">
               <div className="w-[250px] h-[180px] border rounded-md flex items-center justify-center hover:shadow-md cursor-pointer transition-all duration-300 mx-8 my-2">
