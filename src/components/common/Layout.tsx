@@ -9,6 +9,7 @@ const Layout = () => {
 
       <div className="mt-[60px]">
         <Outlet />
+        <Footer/>
       </div>
     </div>
   );
