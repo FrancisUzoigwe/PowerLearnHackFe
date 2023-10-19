@@ -28,7 +28,7 @@ const Footer = () => {
     </div>
     
     
-    <div className="w-[20%] h-[40vh]  gap-[2px] flex flex-col bg-[]
+    <div className="w-[20%] h-[40vh] flex flex-col bg-[] gap-[10px]
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
         <b className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Categories</b>
         <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for business</span>
@@ -42,20 +42,26 @@ const Footer = () => {
         </span>
         {/* <span>Categories</span> */}
      </div>
-    <div className="w-[20%] h-[40vh] flex  flex-col gap-[8px]
+    <div className="w-[20%] h-[49vh] flex  flex-col gap-[10px]
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
 <b className="text-[#fff] hover:text-[#000] cursor-pointer">About</b>
-<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">works</span>
-<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Pricing</span>
-<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">About</span>
-<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Process</span>
-<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Blog</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">works</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">Pricing</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">About</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">Process</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
+  Blog</span>
 </div>
     <div className="w-[15%] h-[40vh] flex  flex-col gap-[8px] 
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
 <div className="w-[67%] flex">
 <button className="px-[40px]
- rounded-[5px] py-[10px] border-[1px] border-[#fff] flex justify-center items-center text-[#ffff]">
+ rounded-[5px] py-[10px] border-[1px] border-[#fff] flex 
+ justify-center items-center text-[#ffff]">
   English
 </button>
    </div>
