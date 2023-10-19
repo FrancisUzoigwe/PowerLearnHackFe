@@ -1,50 +1,61 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
+import { RiRecycleFill } from "react-icons/ri";
 
-const Footer = () => {
+const FirstHeader = () => {
+  const [scroll, setScroll] = useState<boolean>(false);
+  const onScroll = () => {
+    setScroll(!scroll);
+    if (window.scrollY >= 13) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener("scroll", onScroll);
+
   return (
     <div>
-    <div className="w-[100%] h-[90vh] bg-[green] justify-center items-center flex">
-<div className="w-[95%] h-[80vh] flex justify-between
- flex-wrap gap-[8px] max-sm:flex-col max-sm:w-85 max-md:w-85">
-    <div className="w-[40%] h-[30vh] flex   flex-col  gap-[10px]
-    max-sm:w-72 max-md:w-screen max-lg:w-screen">
-     <img src="" alt="" className="w-[30%] h-[50px] flex justify-center
-      items-center object-cover bg-[#33333]"/>
-      <div className="w-[60%] h-[45px] flex gap-[2px]">
-      <img src="" alt="" className="w-[30%] h-[40px] flex justify-center
-      items-center object-cover bg-[#33333]"/>
-       <img src="" alt="" className="w-[30%] h-[40px] flex justify-center
-      items-center object-cover bg-[#33333]"/>
-       <img src="" alt="" className="w-[30%] h-[40px] flex justify-center
-      items-center object-cover bg-[#33333]"/>
+      <div className="w-full py-3 flex items-center justify-center fixed bg-white">
+        <div className="w-[95%]  h-full flex justify-center items-center">
+          <div className="flex justify-between items-center w-full">
+            <div className="flex w-[auto]  justify-between items-center">
+              <div className="mr-20">
+                <RiRecycleFill className="text-4xl"/>
+              </div>
+              <div className="flex max-md:hidden mx-2">
+                <Link to="/mission">
+                  <div className="mx-5 font-bold text-gray-500">
+                    Our Mission
+                  </div>
+                </Link>
+                <Link to="/projects">
+                  <div className="mx-5 font-bold text-gray-500">Projects</div>
+                </Link>
+                <Link to="/blogs">
+                  <div className="mx-5 font-bold text-gray-500">Blogs</div>
+                </Link>
+                <Link to="/contact">
+                  <div className="mx-5 font-bold text-gray-500">Contact</div>
+                </Link>
+              </div>
+            </div>
+            <Link to="/register">
+            <div className="max-sm:hidden ml-2">
+              <button className="px-[24px] py-2 rounded-tl-[20px] rounded-br-[20px] bg-[#69BA00] text-white outline-none font-bold">
+                Get Started
+              </button>
+            </div>
+            </Link>
+            <div className="max-sm:flex hidden">
+              <FiMenu className="text-3xl hover:cursor-pointer hover:scale-125 duration-300" />
+            </div>
+          </div>
+        </div>
       </div>
-<span className="text-[#000]">Contact Us:
-    <span className="text-[#ffff]">hello@explain.ninja</span>
-</span>
-<span className="text-[#000]">©️Explain Ninja Studio, 2023</span>
     </div>
-    <div className="w-[20%] h-[15vh]  gap-[2px] flex flex-col
-     max-sm:w-72 max-md:w-screen max-lg:w-screen">
-        <span className="text-[#fff]">Categories</span>
-        <span className="text-[#000]">Video for business</span>
-        <span className="text-[#000]">
-            Video for a product
-        </span>
-        {/* <span>Categories</span> */}
-     </div>
-    <div className="w-[30%] h-[27vh] flex  flex-col gap-[2px]
-     max-sm:w-72 max-md:w-screen max-lg:w-screen">
-<b className="text-[#fff]">About</b>
-<span>works</span>
-<span>Pricing</span>
-<span>About</span>
-<span>Process</span>
-<span>Blog</span>
-<span>Contact Us</span>
-     </div>
-</div>
-    </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default FirstHeader;
