@@ -12,12 +12,12 @@ const AdminScreen = () => {
       {/* Hold */}
       <br />
       <div>
+        <div className="w-[90%] flex flex-wrap">
         {data?.map((props: any) => (
-          <div className="w-[90%] flex flex-wrap">
-            <div className="py-4 px-4 w-[300px] border-[1px] border-[green] flex justify-between rounded m-[10px] max-md:w-[230px]">
+            <div className="py-4 px-4 w-[300px] border-[1px] border-[#85bc3c] flex justify-between rounded m-[10px] max-md:w-[230px]">
               {/* avatar */}
 
-              <div className="w-[45px] h-[45px] rounded">
+              <div className="w-[45px] h-[45px] rounded border-[1px] border-[#85bc3c] flex items-center justify-center">
                 {props.studentImage}
               </div>
               <div className="w-[75%] break-words">
@@ -26,8 +26,8 @@ const AdminScreen = () => {
                 <nav className="text-[12px]">{props?.email}</nav>
               </div>
             </div>
-          </div>
         ))}
+        </div>
         {/* Hold */}
       </div>
     </div>

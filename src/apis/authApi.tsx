@@ -32,3 +32,13 @@ try {
     console.log(error)
 }
 }
+export const getOneUser = async(userID: string)=>{
+try {
+    return await axios.get(`${url}/api/${userID}/get-one`,).then((res:any)=>{
+       
+        return res.data.data
+    })
+} catch (error) {
+    console.log(error)
+}
+}
