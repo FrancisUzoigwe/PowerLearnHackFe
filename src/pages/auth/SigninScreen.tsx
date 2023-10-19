@@ -27,8 +27,9 @@ const Reg = () => {
 
   const onHandleSubmit = handleSubmit(async (data: any) => {
     signinUser(data).then((res: any) => {
-      console.log(res);
+      console.log(data)
       setState(res);
+      console.log(res);
       navigate("/home");
     });
     reset();

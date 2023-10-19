@@ -1,8 +1,5 @@
 import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
 import { LuLayoutDashboard } from "react-icons/lu";
-import { BsFolder } from "react-icons/bs";
-import { HiOutlineCalendar } from "react-icons/hi";
-import { LiaFacebookMessenger } from "react-icons/lia";
 import { BsFillCreditCard2BackFill } from "react-icons/bs";
 import { CgLogOut } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
@@ -141,12 +138,12 @@ const Sider = () => {
 
           {/* <div className="mt-[100px] md:mt-[140px] bg-slate-400" /> */}
           <div
-            className="flex w-full h-[50px] hover:cursor-pointer transition-all duration-300 mt-[30px] md:mt-[250px] pl-[10px] items-center bg-slate-600 "
+            className="flex w-full h-[50px] mt-[30px] md:mt-[250px] pl-[10px] items-center bg-[#85bc3c]  hover:text-[black] hover:cursor-pointer transition-all duration-300"
           >
             <div
               className="h-[50px] flex items-center justify-center mb-[0px] w-[40px] rounded
               [50px]
-               hover:text-[black] hover:cursor-pointer transition-all duration-300"
+              "
             >
               <CgLogOut className="text-[25px]" />
             </div>
