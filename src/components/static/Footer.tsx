@@ -8,10 +8,10 @@ const Footer = () => {
     <div className="w-[95%] flex justify-between  items-center
  flex-wrap gap-[8px] max-sm:flex-col max-sm:w-85 max-md:w-85">
 
-<div className="w-[20%] h-[45vh] flex   flex-col  gap-[10px] bg-[]  max-sm:w-72
+<div className="w-[20%] h-[40vh] flex   flex-col  gap-[10px]   max-sm:w-72
    max-md:w-72 max-lg:w-72">
    
-      <div className="w-[100%] h-[65px] flex gap-[10px] bg-[]
+      <div className="w-[100%] h-[55px] flex gap-[10px] bg-[]
        items-center">
    
      <BsYoutube  className=" text-[50px] flex justify-center
@@ -28,7 +28,7 @@ const Footer = () => {
     </div>
     
     
-    <div className="w-[20%] h-[40vh] flex flex-col bg-[] gap-[10px]
+    <div className="w-[20%] h-[35vh] flex flex-col bg-[] gap-[7px]
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
         <b className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Categories</b>
         <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for business</span>
@@ -40,9 +40,8 @@ const Footer = () => {
         <span className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
             Video for a product
         </span>
-        {/* <span>Categories</span> */}
      </div>
-    <div className="w-[20%] h-[49vh] flex  flex-col gap-[10px]
+    <div className="w-[20%] h-[35vh] flex  flex-col gap-[10px]
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
 <b className="text-[#fff] hover:text-[#000] cursor-pointer">About</b>
 <span className="text-[#ffff] hover:text-[#000] cursor-pointer
@@ -56,12 +55,11 @@ const Footer = () => {
 <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
   Blog</span>
 </div>
-    <div className="w-[15%] h-[40vh] flex  flex-col gap-[8px] 
+    <div className="w-[15%] h-[35vh] flex  flex-col gap-[8px] 
      max-sm:w-72 max-md:w-screen max-lg:w-screen">
 <div className="w-[67%] flex">
 <button className="px-[40px]
- rounded-[5px] py-[10px] border-[1px] border-[#fff] flex 
- justify-center items-center text-[#ffff]">
+ rounded-[5px] py-[10px] border-[1px] border-[#fff] flex justify-center items-center text-[#ffff]">
   English
 </button>
    </div>
@@ -74,5 +72,4 @@ const Footer = () => {
     </div>
   )
 }
-
 export default Footer
