@@ -20,7 +20,7 @@ const HomeScreen = () => {
               <div className="w-[250px] h-[180px] border rounded-md flex items-center justify-center hover:shadow-md cursor-pointer transition-all duration-300 mx-8 my-2">
                 <div className="flex flex-col items-center w-[90%] h-[90%] justify-cente ">
                   <div className="mt-5 text-3xl font-bold flex items-center">
-                    ₦{show ? <div>2000.00</div> : <div>*****</div>}
+                    ₦{show ? <div>2000.00</div> : <div>****.**</div>}
                   </div>
                   <div
                     className="mt-14 text-4xl transition-all"
