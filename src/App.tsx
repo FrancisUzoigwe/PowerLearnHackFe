@@ -3,7 +3,7 @@ import { mainRouter } from "./router/mainRouter";
 const App = () => {
   return (
     <div>
-          <RouterProvider router={mainRouter} />
+      <RouterProvider router={mainRouter} />
     </div>
   );
 };

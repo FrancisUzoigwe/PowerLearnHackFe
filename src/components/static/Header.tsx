@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdLogout } from "react-icons/md";
 import { RiRecycleFill } from "react-icons/ri";
+import useUser from "../../global/globalFile";
 
 const Header = () => {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -14,6 +15,8 @@ const Header = () => {
   };
   window.addEventListener("scroll", onScroll);
 
+  const [state, setState] = useUser();
+
   return (
     <div>
       <div className="w-full py-3 flex items-center justify-center fixed bg-white">
@@ -24,7 +27,11 @@ const Header = () => {
                 <RiRecycleFill className="text-4xl" />
               </div>
             </div>
-            <div>
+            <div
+              onClick={() => {
+                setState(null);
+              }}
+            >
               <MdLogout className="text-3xl  hover:scale-125 duration-300 transition-all cursor-pointer" />
             </div>
           </div>
