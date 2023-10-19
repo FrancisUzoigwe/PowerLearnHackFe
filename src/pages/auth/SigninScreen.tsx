@@ -2,13 +2,13 @@ import { useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { SigninUser } from "../../apis/authApi";
+import { signinUser } from "../../apis/authApi";
 import { useNavigate } from "react-router-dom";
+import useUser from "../../global/globalFile";
 
 const Reg = () => {
-  // console.log(state);
-const navigate =useNavigate()
-
+  const [state, setState] = useUser();
+  const navigate = useNavigate();
   const [checked, setChecked] = useState<boolean>(false);
 
   const Schema = yup.object({
@@ -19,21 +19,20 @@ const navigate =useNavigate()
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(Schema),
   });
 
-  const onHandleSubmit = handleSubmit(async (data:any) => { 
-    const {email,password}= data
-    console.log(data);
-    
-  SigninUser({email,password}).then((res:any)=>{
-    navigate("/home")
-    return res.data
-  })
-   });
+  const onHandleSubmit = handleSubmit(async (data: any) => {
+    signinUser(data).then((res: any) => {
+      setState(res);
+      navigate("/home");
+      // return res.data;
+    });
+    reset()
+  });
 
   return (
     <div>

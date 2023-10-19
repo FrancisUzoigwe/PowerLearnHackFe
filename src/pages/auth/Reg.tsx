@@ -6,7 +6,7 @@ import { createUser } from "../../apis/authApi";
 import { useNavigate } from "react-router-dom";
 
 const Reg = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [checked, setChecked] = useState<boolean>(false);
 
@@ -19,20 +19,20 @@ const Reg = () => {
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(Schema),
   });
 
-  const onHandleSubmit = handleSubmit(async (data:any) => {
-    const {email,password,name} = data
-    console.log(data)
-    createUser({email,password,name}).then((res:any)=>{
-  
-      navigate( "/signin")
-     return res.data
-    })
+  const onHandleSubmit = handleSubmit(async (data: any) => {
+    const { email, password, name } = data;
+    console.log(data);
+    createUser({ email, password, name }).then((res: any) => {
+      navigate("/signin");
+      return res.data;
+    });
+    reset();
   });
 
   return (

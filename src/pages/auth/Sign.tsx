@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Reg from "./Reg";
-import SigninScreen from "./SigninScreen"
+import SigninScreen from "./SigninScreen";
 
 const Sign = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -10,7 +10,6 @@ const Sign = () => {
     setToggle(true);
     setToggle1(false);
   };
-  // console.log(onToggle);
 
   const onToggle1 = () => {
     setToggle1(true);
@@ -36,12 +35,12 @@ const Sign = () => {
                         ? "border border-green-400 text-green-300"
                         : " bg-green-400 text-white"
                     } py-2 px-5 ml-2 rounded-sm  font-semibold transition-all rounded-tl-[20px] rounded-br-[20px]  duration-500`}
-                    onClick={onToggle}
+                    onClick={onToggle1}
                   >
                     Login
                   </button>
                   <button
-                    onClick={onToggle1}
+                    onClick={onToggle}
                     className={`${
                       toggle1
                         ? "border border-green-400 text-green-300"
