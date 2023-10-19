@@ -3,9 +3,11 @@ import Header from "../static/Header";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
-      <Outlet />
+      <div className="mt-[60px]">
+        <Outlet />
+      </div>
     </div>
   );
 };
