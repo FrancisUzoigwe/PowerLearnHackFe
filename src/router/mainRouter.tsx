@@ -5,8 +5,11 @@ import RegisterScreen from "../pages/auth/RegisterScreen";
 // import SigninScreen from "../pages/auth/SigninScreen";
 import Layout from "../components/common/Layout";
 import HomeScreen from "../pages/home/HomeScreen";
-import MailScreen from "../pages/auth/MailScreen"
+import MailScreen from "../pages/auth/MailScreen";
 import Sign from "../pages/auth/Sign";
+import PrivateRoute from "./PrivateRoute";
+import AdminLayout from "../pages/admin/AdminLayout";
+import AdminScreen from "../pages/admin/AdminScreen";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -32,8 +35,22 @@ export const mainRouter = createBrowserRouter([
     element: <Sign />,
   },
   {
+    path: "/overseer",
+    element: <AdminLayout/>,
+    children: [
+      {
+        index: true,
+        element: <AdminScreen/>
+      }
+    ]
+  },
+  {
     path: "/home",
-    element: <Layout />,
+    element: (
+      <PrivateRoute>
+        <Layout />
+      // </PrivateRoute>
+    ),
     children: [
       {
         index: true,
