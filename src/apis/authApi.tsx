@@ -1,7 +1,7 @@
 import axios from "axios"
 
-// const url:string = "https://dirttoschool.onrender.com"
-const url:string = "https://8023-129-205-124-243.ngrok.io"
+const url:string = "https://dirttoschool.onrender.com"
+// const url:string = "https://8023-129-205-124-243.ngrok.io"
 
 export const createUser  = async(data:any) =>{
 try {

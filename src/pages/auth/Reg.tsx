@@ -39,7 +39,7 @@ const Reg = () => {
     <div>
       <form onSubmit={onHandleSubmit}>
         <div className="mt-[25px] relative rounded-md">
-          <div className="absolute bg-white px-2 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] ">
+          <div className="absolute bg-white px-2 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] text-gray-500">
             Enter Name:
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">
@@ -57,7 +57,7 @@ const Reg = () => {
           )}
         </div>
         <div className="mt-[25px] relative rounded-md">
-          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] ">
+          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] text-gray-500">
             Enter Email:
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">
@@ -74,8 +74,8 @@ const Reg = () => {
             </div>
           )}
         </div>
-        <div className="mt-[25px] relative rounded-md">
-          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] ">
+        <div className="mt-[25px] relative rounded-md ">
+          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] text-gray-500">
             Enter Password:
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">

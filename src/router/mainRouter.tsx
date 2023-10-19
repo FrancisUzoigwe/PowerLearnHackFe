@@ -10,6 +10,7 @@ import Sign from "../pages/auth/Sign";
 import PrivateRoute from "./PrivateRoute";
 import AdminLayout from "../pages/admin/AdminLayout";
 import AdminScreen from "../pages/admin/AdminScreen";
+import UpdateScreen from "../pages/home/UpdateScreen";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -36,25 +37,29 @@ export const mainRouter = createBrowserRouter([
   },
   {
     path: "/overseer",
-    element: <AdminLayout/>,
+    element: <AdminLayout />,
     children: [
       {
         index: true,
-        element: <AdminScreen/>
-      }
-    ]
+        element: <AdminScreen />,
+      },
+    ],
   },
   {
     path: "/home",
     element: (
-      <PrivateRoute>
-        <Layout />
+      // <PrivateRoute>
+      <Layout />
       // </PrivateRoute>
     ),
     children: [
       {
         index: true,
         element: <HomeScreen />,
+      },
+      {
+        path: "/home/update",
+        element: <UpdateScreen />,
       },
     ],
   },

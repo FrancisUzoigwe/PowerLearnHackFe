@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Reg from "./Reg";
 import SigninScreen from "./SigninScreen";
+import dirt2 from "../../assets/dirts2.jpg"
 
 const Sign = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -21,7 +22,7 @@ const Sign = () => {
       <div className="w-[93%] h-[93%]  rounded-xl shadow-3xl flex overflow-hidden max-lg:justify-center">
         <div className="w-[65%] bg-green-500 flex rounded-3xl flex-col items-center max-lg:hidden">
           <div className="w-full h-full rounded-3xl ">
-            <img src={""} className="h-full w-full object-cover" />
+            <img src={dirt2} className="h-full w-full object-cover" />
           </div>
         </div>
         <div className="w-[35%] flex flex-col items-center justify-center">

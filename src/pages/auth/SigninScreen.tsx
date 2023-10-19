@@ -27,18 +27,18 @@ const Reg = () => {
 
   const onHandleSubmit = handleSubmit(async (data: any) => {
     signinUser(data).then((res: any) => {
+      console.log(res);
       setState(res);
       navigate("/home");
-      // return res.data;
     });
-    reset()
+    reset();
   });
 
   return (
     <div>
       <form onSubmit={onHandleSubmit}>
         <div className="mt-[25px] relative rounded-md">
-          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] ">
+          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] text-gray-500">
             Enter Email:
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">
@@ -56,7 +56,7 @@ const Reg = () => {
           )}
         </div>
         <div className="mt-[25px] relative rounded-md">
-          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] ">
+          <div className="absolute bg-white px-1 text-[13px] max-sm:text-[10px] max-sm:mt-[-8px] font-semibold ml-[15px] mt-[-10px] text-gray-500">
             Enter Password:
           </div>
           <div className="min-w-[300px] h-[40px] border flex justify-center items-center rounded-full overflow-hidden">

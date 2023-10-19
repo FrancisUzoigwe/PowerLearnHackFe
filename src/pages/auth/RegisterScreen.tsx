@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SigninScreen from "./SigninScreen";
 import Reg from "./Reg";
+import dirt from "../../assets/bottle.jpg"
 
 const RegisterScreen = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -10,19 +11,20 @@ const RegisterScreen = () => {
     setToggle(true);
     setToggle1(false);
   };
-  // console.log(onToggle);
 
   const onToggle1 = () => {
     setToggle1(true);
     setToggle(false);
   };
 
+
+
   return (
     <div className="w-full h-[100vh] flex items-center justify-center bg-gray-100  ">
       <div className="w-[93%] h-[93%]  rounded-xl shadow-3xl flex overflow-hidden max-lg:justify-center">
         <div className="w-[65%] bg-green-500 flex rounded-3xl flex-col items-center max-lg:hidden">
           <div className="w-full h-full rounded-3xl ">
-            <img src={""} className="h-full w-full object-cover" />
+            <img src={dirt} className="h-full w-full object-cover" />
           </div>
         </div>
         <div className="w-[35%] flex flex-col items-center justify-center">
