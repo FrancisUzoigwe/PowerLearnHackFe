@@ -4,10 +4,12 @@ import Footer from "../static/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
-      <Outlet />
-      <Footer/>
+
+      <div className="mt-[60px]">
+        <Outlet />
+      </div>
     </div>
   );
 };

@@ -1,9 +1,18 @@
 import { RouterProvider } from "react-router-dom";
 import { mainRouter } from "./router/mainRouter";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
+import { store } from "./global/store";
+import { Provider } from "react-redux";
 const App = () => {
+  let persistor = persistStore(store);
   return (
     <div>
-      <RouterProvider router={mainRouter} />
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <RouterProvider router={mainRouter} />
+        </PersistGate>
+      </Provider>
     </div>
   );
 };
