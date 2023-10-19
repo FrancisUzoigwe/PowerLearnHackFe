@@ -20,6 +20,7 @@ const Footer = () => {
 <span className="text-[#000]">Contact Us:
     <span className="text-[#ffff]">hello@explain.ninja</span>
 </span>
+
 <span className="text-[#000]">©️Explain Ninja Studio, 2023</span>
     </div>
     <div className="w-[20%] h-[15vh]  gap-[2px] flex flex-col

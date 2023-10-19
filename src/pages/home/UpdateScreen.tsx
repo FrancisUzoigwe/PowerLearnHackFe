@@ -6,6 +6,7 @@ const UpdateScreen = () => {
       </div>
     </div>
   );
+  
 };
 
 export default UpdateScreen;
