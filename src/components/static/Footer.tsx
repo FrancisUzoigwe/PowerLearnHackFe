@@ -44,98 +44,68 @@ const Footer = () => {
             </span>
           </div>
 
-          <div
-            className="w-[20%] h-[40vh] flex flex-col bg-[] gap-[10px]
-     max-sm:w-72 max-md:w-screen max-lg:w-screen"
-          >
-            <b className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Categories
-            </b>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video for business
-            </span>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video for Works
-            </span>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video for Blog
-            </span>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video for Terms
-            </span>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video on Careers
-            </span>
-            <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video on Investors
-            </span>
-            <span className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Video for a product
-            </span>
-            {/* <span>Categories</span> */}
-          </div>
-          <div
-            className="w-[20%] h-[49vh] flex  flex-col gap-[10px]
-     max-sm:w-72 max-md:w-screen max-lg:w-screen"
-          >
-            <b className="text-[#fff] hover:text-[#000] cursor-pointer">
-              About
-            </b>
-            <span
-              className="text-[#ffff] hover:text-[#000] cursor-pointer
- transition-all delay-63"
-            >
-              works
-            </span>
-            <span
-              className="text-[#ffff] hover:text-[#000] cursor-pointer
- transition-all delay-63"
-            >
-              Pricing
-            </span>
-            <span
-              className="text-[#ffff] hover:text-[#000] cursor-pointer
- transition-all delay-63"
-            >
-              About
-            </span>
-            <span
-              className="text-[#ffff] hover:text-[#000] cursor-pointer
- transition-all delay-63"
-            >
-              Process
-            </span>
-            <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Blog
-            </span>
-          </div>
-          <div
-            className="w-[15%] h-[40vh] flex  flex-col gap-[8px] 
-     max-sm:w-72 max-md:w-screen max-lg:w-screen"
-          >
-            <div className="w-[67%] flex">
-              <button
-                className="px-[40px]
- rounded-[5px] py-[10px] border-[1px] border-[#fff] flex 
- justify-center items-center text-[#ffff]"
-              >
-                English
-              </button>
-            </div>
-            <b className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Cookie Settings
-            </b>
-            <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Privacy policy
-            </span>
-            <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
-              Get app
-            </span>
-          </div>
-        </div>
+<div className="w-[20%] h-[40vh] flex   flex-col  gap-[10px]   max-sm:w-72
+   max-md:w-72 max-lg:w-72">
+   
+      <div className="w-[100%] h-[55px] flex gap-[10px] bg-[]
+       items-center">
+   
+     <BsYoutube  className=" text-[50px] flex justify-center
+     items-center object-cover text-[red] rounded-[7px]"/>
+<FaFacebook className="text-[40px] flex justify-center
+     items-center object-cover text-[#0a74ff] rounded-[7px]"/>
+     <FaFacebookMessenger  className="text-[40px] flex justify-center
+     items-center object-cover text-[#0a74ff] rounded-[7px]"/>
       </div>
+      <b className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Careers</b>
+      <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Investors</span>
+      <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Sitemap</span>
+      <span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Terms</span>
     </div>
-  );
-};
-
-export default Footer;
+    
+    
+    <div className="w-[20%] h-[35vh] flex flex-col bg-[] gap-[7px]
+     max-sm:w-72 max-md:w-screen max-lg:w-screen">
+        <b className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Categories</b>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for business</span>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for Works</span>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for Blog</span>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video for Terms</span>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video on Careers</span>
+        <span className=" text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">Video on Investors</span>
+        <span className="text-[#fff] hover:text-[#000] cursor-pointer transition-all delay-63">
+            Video for a product
+        </span>
+     </div>
+    <div className="w-[20%] h-[35vh] flex  flex-col gap-[10px]
+     max-sm:w-72 max-md:w-screen max-lg:w-screen">
+<b className="text-[#fff] hover:text-[#000] cursor-pointer">About</b>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">works</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">Pricing</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">About</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer
+ transition-all delay-63">Process</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">
+  Blog</span>
+</div>
+    <div className="w-[15%] h-[35vh] flex  flex-col gap-[8px] 
+     max-sm:w-72 max-md:w-screen max-lg:w-screen">
+<div className="w-[67%] flex">
+<button className="px-[40px]
+ rounded-[5px] py-[10px] border-[1px] border-[#fff] flex justify-center items-center text-[#ffff]">
+  English
+</button>
+   </div>
+<b className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Cookie Settings</b>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Privacy policy</span>
+<span className="text-[#ffff] hover:text-[#000] cursor-pointer transition-all delay-63">Get app</span>
+</div>
+</div>
+    </div>
+    </div>
+  )
+}
+export default Footer
