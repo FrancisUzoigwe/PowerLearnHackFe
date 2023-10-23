@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MdLogout } from "react-icons/md";
-import { RiRecycleFill } from "react-icons/ri";
 import useUser from "../../global/globalFile";
 
 const Header = () => {
@@ -16,6 +15,7 @@ const Header = () => {
   window.addEventListener("scroll", onScroll);
 
   const [state, setState] = useUser();
+  console.log(typeof state);
 
   return (
     <div>
@@ -24,7 +24,9 @@ const Header = () => {
           <div className="flex justify-between items-center w-full">
             <div className="flex w-[auto]  justify-between items-center">
               <div className="mr-20">
-                <RiRecycleFill className="text-4xl" />
+                <div className="text-[14px]">
+                  Dirt<span className="text-[18px] font-bold">2</span>School
+                </div>
               </div>
             </div>
             <div

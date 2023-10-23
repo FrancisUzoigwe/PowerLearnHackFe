@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import { usePaystackPayment } from "react-paystack";
-// import useUser from "../../global/globalFile";
 
 const UpdateScreen = () => {
 
@@ -25,8 +24,8 @@ const UpdateScreen = () => {
   const initializePayment = usePaystackPayment(config);
 
   return (
-    <div className="w-full h-[100vh] flex justify-center  bg-green-400 items-center">
-      <div className="w-[310px] h-[250px] rounded-xl bg-white flex flex-col justify-center items-center">
+    <div className="w-full h-[90vh] flex justify-center items-center">
+      <div className="w-[310px] h-[250px] rounded-xl  flex flex-col justify-center items-center">
         <div className="flex flex-col">
           <div className="font-bold text-[14px]">Email: </div>
           <div className="w-[280px] h-[40px] border flex items-center rounded-md overflow-hidden">

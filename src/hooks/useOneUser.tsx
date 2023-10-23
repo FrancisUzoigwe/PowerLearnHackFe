@@ -7,10 +7,9 @@ import { getOneUser } from "../apis/authApi";
 //     return { data, error, isLoading }
 // }
 export const useOneUser = (id: string) => {
-  const { data, error, isLoading } = useSWR(
-    `/${id}/api/get-one/`,() => getOneUser(id)
+  const { data, error, isLoading } = useSWR(`/${id}/api/get-one/`, () =>
+    getOneUser(id)
   );
-  console.log(data);
   return { data, error, isLoading };
 };
 

@@ -8,6 +8,8 @@ import useUser from "../../global/globalFile";
 
 const Reg = () => {
   const [state, setState] = useUser();
+  console.log(typeof state);
+  
   const navigate = useNavigate();
   const [checked, setChecked] = useState<boolean>(false);
 

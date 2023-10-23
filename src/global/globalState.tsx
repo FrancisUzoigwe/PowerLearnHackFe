@@ -14,16 +14,17 @@ const globalState = createSlice({
     // onChangeToggled: (state: any) => {
     //   state.toggle = false;
     // },
-    
+
     changeToggleTrue: (state: any) => {
-      state.toggle = true
-  },
-  changeToggleFalse: (state: any) => {
-      state.toggle = false
-  }
+      state.toggle = true;
+    },
+    changeToggleFalse: (state: any) => {
+      state.toggle = false;
+    },
   },
 });
 
-export const { toggle, changeToggleTrue, changeToggleFalse } = globalState.actions;
+export const { toggle, changeToggleTrue, changeToggleFalse } =
+  globalState.actions;
 
 export default globalState.reducer;

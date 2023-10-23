@@ -1,5 +1,5 @@
 import { BsPlayCircleFill } from "react-icons/bs";
-import vite from "../../assets/react.svg";
+import vite from "../../assets/bottle.jpg";
 
 const LandingScreen = () => {
   return (
@@ -15,6 +15,7 @@ const LandingScreen = () => {
               />
             </div>
             <div className="">
+              
               <div className="text-[50px] font-bold mt-20 max-md:text-[30px] max-md:mt-10">
                 Let's clean the Nature
               </div>
@@ -38,19 +39,13 @@ const LandingScreen = () => {
                 <div className="mx-2 mt-2">
                   <div className="font-extrabold my-1">Our Environment</div>
                   <div className="text-[14px]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Doloremque tenetur deserunt ad. Pariatur quos voluptatum
-                    quia sed unde neque deleniti sequi itaque cumque sunt
-                    tempora, impedit, similique maiores perferendis temporibus!
+                    Our environment is being faced by pollutions ranging from that of the air, down to that of littering of non-decompsable items, which could lead to 
                   </div>
                 </div>
                 <div className="mx-2 mt-2 max-md:mt-5">
                   <div className="font-extrabold my-1">Our Story</div>
                   <div className="text-[14px]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Doloremque tenetur deserunt ad. Pariatur quos voluptatum
-                    quia sed unde neque deleniti sequi itaque cumque sunt
-                    tempora, impedit, similique maiores perferendis temporibus!
+                  We began with a passion for the environment. Our platform educates, collaborates, and advocates for a cleaner planet.
                   </div>
                 </div>
               </div>
@@ -59,7 +54,7 @@ const LandingScreen = () => {
         </div>
         <div className="h-[570px] w-[570px] ml-5 rounded-full border hidden md:flex ">
           <img
-            src=""
+            src={vite}
             alt="Environment"
             className="w-full h-full rounded-full object-cover bg-green-400"
           />

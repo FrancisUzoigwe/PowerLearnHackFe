@@ -44,23 +44,23 @@ export const mainRouter = createBrowserRouter([
         index: true,
         element: <AdminScreen />,
       },
+      {
+        path: "/overseer/check",
+        element: <UpdateScreen />,
+      },
     ],
   },
   {
     path: "/home",
     element: (
       <PrivateRoute>
-      <Layout />
+        <Layout />
       </PrivateRoute>
     ),
     children: [
       {
         index: true,
         element: <HomeScreen />,
-      },
-      {
-        path: "/home/update",
-        element: <UpdateScreen />,
       },
     ],
   },
