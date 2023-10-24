@@ -15,6 +15,7 @@ const Sider = () => {
   const dispatch = useDispatch();
   const toggle = useSelector((state: any) => state.toggle);
   return (
+    
     <div className="small:hidden">
       {toggle ? (
         <div className="h-[100vh] w-[65px] fixed bg-[#69BA00] text-white pt-[10px]">
